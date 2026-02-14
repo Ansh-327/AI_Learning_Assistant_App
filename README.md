@@ -41,7 +41,7 @@ All reusable UI, logic, and AI integration lives here.
 - `androidMain` → Android-only code  
 - `iosMain` → iOS-only code  
 
-### 🔹 iosApp
+### 🔹 `iosApp`
 
 Native iOS entry point (Xcode project).
 
