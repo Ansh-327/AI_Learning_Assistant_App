@@ -41,12 +41,19 @@ All reusable UI, logic, and AI integration lives here.
 - `androidMain` → Android-only code  
 - `iosMain` → iOS-only code  
 
-### 🔹 `iosApp`
+### 🔹 iosApp
+
 Native iOS entry point (Xcode project).
 
 Responsible for:
-- iOS app lifecycle
-- Rendering the shared Compose Multiplatform UI
+- Managing the iOS app lifecycle
+- Bootstrapping the application on iOS
+- Rendering the **shared Compose Multiplatform UI from `commonMain`**
+
+ℹ️ Note:  
+No SwiftUI UI code is used.  
+The complete UI is written once in `commonMain` and shared across **Android and iOS**.
+
 
 ---
 
