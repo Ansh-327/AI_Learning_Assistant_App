@@ -1,35 +1,77 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# 🤖 AI Learning Assistant App (Kotlin Multiplatform)
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+An AI-powered **Learning Assistant App** built using **Kotlin Multiplatform (KMP)** and **Compose Multiplatform** & **AI Integration**, targeting **Android & iOS** from a shared codebase.
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
-### Build and Run Android Application
-
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
-
-### Build and Run iOS Application
-
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+This project focuses on:
+- ✨ Clean Multiplatform Architecture  
+- 🚀 Shared UI with Compose Multiplatform  
+- 🧠 AI (Gemini API) Integration  
+- 🔐 Firebase Authentication  
+- 📱 Real-world cross-platform development  
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 🌍 Platforms Supported
+- ✅ Android
+- ✅ iOS
+
+---
+
+## 📁 Project Structure (Simplified)
+
+
+AILearningAssistantApp/
+│
+├── composeApp/ # Shared Multiplatform code
+│ ├── commonMain/ # Shared UI, ViewModels, business logic
+│ ├── androidMain/ # Android-specific implementations
+│ └── iosMain/ # iOS-specific implementations
+│
+├── iosApp/ # Native iOS app (SwiftUI entry point)
+│
+└── build.gradle.kts # Project configuration
+
+
+
+### 🔹 `composeApp`
+This is the **heart of the project** ❤️  
+All reusable UI, logic, and AI integration lives here.
+
+- `commonMain` → shared across Android & iOS  
+- `androidMain` → Android-only code  
+- `iosMain` → iOS-only code  
+
+### 🔹 `iosApp`
+Native iOS entry point (Xcode project).
+
+Responsible for:
+- iOS app lifecycle
+- Rendering the shared Compose Multiplatform UI
+
+---
+
+## 🧠 AI Features
+- Gemini API powered responses
+- Real-time chat-style interface
+- Compose-friendly state handling
+- Error-safe API calls
+
+---
+
+## 🔐 Authentication
+- Firebase Email/Password Authentication
+- Auto-login handling
+- Secure logout flow
+
+---
+
+
+# 📸 ScreenShot
+
+<img width="487" height="1011" alt="Screenshot 2026-02-15 032910" src="https://github.com/user-attachments/assets/f5368882-6d99-457b-9d64-c37d67c110a9" />
+
+<img width="495" height="1006" alt="Screenshot 2026-02-15 032717" src="https://github.com/user-attachments/assets/29a3f847-ba03-475b-819d-1495172efccf" />
+
+<img width="488" height="1004" alt="Screenshot 2026-02-15 032924" src="https://github.com/user-attachments/assets/a85ec35c-a4fb-46c9-bd24-3b0542269a0e" />
+
+<img width="489" height="1011" alt="Screenshot 2026-02-15 033000" src="https://github.com/user-attachments/assets/d7f1c7ba-8235-4d67-95f7-689241e8087c" />
