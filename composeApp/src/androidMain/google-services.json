@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "495140135344",
+    "project_id": "ai-learning-assistant-app",
+    "storage_bucket": "ai-learning-assistant-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495140135344:android:b0bc6eff14ce59a536f675",
+        "android_client_info": {
+          "package_name": "com.example.ailearningassistantapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAukK2Q55yFVn-HJNDRZyhOPYIpM4gxths"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
